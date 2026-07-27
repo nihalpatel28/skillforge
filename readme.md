@@ -216,10 +216,7 @@ IP Address : 192.168.1.25
 # 📷 Demonstration Images
 
 ## Login Page
-
-```
-(Add Screenshot Here)
-```
+<img width="1917" height="872" alt="Screenshot 2026-07-28 033239" src="https://github.com/user-attachments/assets/4f7969ac-4103-4a3e-88d2-c0b249303421" />
 
 Example
 
@@ -230,10 +227,8 @@ images/login-page.png
 ---
 
 ## Captured Credentials
+<img width="872" height="552" alt="Screenshot 2026-07-28 033210" src="https://github.com/user-attachments/assets/ec368f83-bdeb-4f03-9047-620d0120f1b5" />
 
-```
-(Add Screenshot Here)
-```
 
 Example
 
