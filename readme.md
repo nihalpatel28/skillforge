@@ -227,7 +227,7 @@ images/login-page.png
 ---
 
 ## Captured Credentials
-<img width="872" height="552" alt="Screenshot 2026-07-28 033210" src="https://github.com/user-attachments/assets/ec368f83-bdeb-4f03-9047-620d0120f1b5" />
+<img width="1092" height="242" alt="image" src="https://github.com/user-attachments/assets/5929747b-048a-4304-926a-21ecf01206e7" />
 
 
 Example
